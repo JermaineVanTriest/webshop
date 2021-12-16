@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SigaarShop</title>
+
+    <link rel="icon" href="/assets/images/cg-favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/cart.css">
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/node_modules/vue/dist/vue.min.js"></script>
+    
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+    <script src="/assets/js/config.js"></script>
+    
+    <script src="/assets/js/arikelen.js"></script>
+    <script src="/assets/js/nav bar.js"></script>
+    <script src="/assets/js/components/product.js"></script>
+    <script src="/assets/js/components/cart.js"></script>
+    <script src="/assets/js/hover.js"></script>
+    <script src="/assets/js/app.vue"></script>
+    <script src="/assets/js/app.vue"></script>
+</head>
+    
+<body background="assets/images/webshop/background.png">      
+    
+    
+      
+            <main id="app">
+               <header>   
+                <div class="container-fluid p-0">
+                    <div class="nav-container">
+                        <nav class="navbar">
+                            <h2 id="navbar-logo"> {{ appName }} </h2>
+                                <div class="menu-toggle" id="mobile-menu">
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>
+                                    <span class="bar"></span>         
+                                </div>
+                               
+                                    <ul class="nav-menu">
+                                        <li><a href="#" class="nav-link nav-links-btn">home</a></li>
+                                        <li><a href="/test.html" class="nav-link nav-links-btn">test</a></li>
+                                        <li><a href="#" class="nav-link nav-links-btn">About us</a></li>
+                                        <li><a href="/shopcart.html" class="nav-link nav-links-btn">shopcart</a></li>
+                                        <li><a href="#" class="nav-link nav-links-btn">sige up</a></li>
+                                        <li><i class="bi bi-cart4 basket" style="font-size: 2em;" @click="showCart"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>    
+                    </div>   
+                </div>
+        </header>     
+         
+
+                <div class="clearfix">
+                    <img src="https://www.freeiconspng.com/uploads/black-tick-icon-png-33.png" style="float:left" alt="..."width="280" height="280" >
+                        <p><strong>&#10004; Gratis verzending Nederland v.a. €60,-</strong></p>
+                        <p><strong>&#10004; Voor 15:00 uur besteld, dezelfde dag verzonden</strong></p>
+                        <p><strong>&#10004; Snel en vertrouwd</strong></p>
+                        <p><strong>&#10004; Sigaren over de hele wereld</strong></p>
+                        <p><strong>&#10004; Bereikbaar voor advies</strong></p>
+                    </div>                                                 
+               
+                
+                <div id="intern-link" class="container"></div>
+                    <div class="col align-self-center">
+                        <ul>
+                            <li>
+                                <center><a href="#Welke-sigaar">Welke sigaar past bij mij?</a></center>
+                            </li>
+                            <li>
+                                <center><a href="#Waarom-humidor">Waarom heb ik een humidor nodig?</a></center>
+                            </li>
+                            <li>
+                                <center><a href="#Knip-sigaar">Hoe knip je een sigaar?</a></center>
+                            </li>
+                            <li>
+                                <center><a href="#Sigaar-aansteken">Hoe kan ik het beste mijn sigaar aansteken?</a></center>
+                            </li>
+                        </ul>
+                    </div>
+                </div>           
+                            
+                    
+                <main id="app">      
+                    <div class="container-fluid p-0">
+                        <section class="content container">
+                            <div class="row">
+                                <div class="col-md-4 pt-3" v-for="artikel in artikels">
+                                    <product :artikel_data="artikel"></product>
+                                </div>
+                            </div>
+                        </section>
+                    </div>  
+
+                <nav>
+                   <div class="container-fluid p-0">
+                       <header class="my-header">
+                           <div class="row">
+                               <div class="col-md-12 text-center pt-4">
+                                   <div class="container"></div>
+
+                                       <h6 class="text-center ">Welke sigaar past bij mij?</h6>
+                                       <p><a name="Welke-sigaar"></a></p>
+                                       <p class="text-center">Een sigaar kiezen is niet heel moeilijk, bent u een beginnende roker? Start dan met een dunnere sigaar. 
+                                       Dikkere sigaren zijn vaak te heftig voor een onervaren sigarenroker en worden daardoor als niet lekker 
+                                       ervaren. Daarnaast rookt u een dunne sigaar ook minder lang, namelijk een halfuurtje. Dit is voor een 
+                                       beginner voldoende. Bent u een ervaren roker, kom dan naar onze sigarenwinkel, hier verlenen wij u de 
+                                       service om de beste sigaar te kiezen die inspeelt op uw wensen.</p>
+                   
+                                       <h6 class="text-center">Waarom heb ik een humidor nodig?</h6>
+                                       <p><a name="Waarom-humidor"></a></p>
+                                       <p class="text-center">Een humidor is en klimaat-controlerende box die de luchtvochtigheid regelt, zodat je sigaren goed blijven. 
+                                       Sigaren hebben namelijk een bepaalde luchtvochtigheid nodig om ervoor te zorgen dat ze goed branden en zo 
+                                       goed mogelijk smaken. Het hebben van een humidor is dus een must!</p>
+                   
+                                       <h6 class="text-center">Hoe knip je een sigaar?</h6>
+                                       <p><a name="Knip-sigaar"></a></p>
+                                       <p class="text-center">Als u niet zeker weet hoe u precies moet knippen, 
+                                       bekijk dan onze youtube filmpje. 
+                                       Let op dat u niet te veel afknipt, want het dekblad kan loslaten. 
+                                       Zorg dat u de sigaar afknipt op de zogenoemde schouder.</p>
+               
+                   
+                                       <h6 class="text-center">Hoe kan ik het beste mijn sigaar aansteken?</h6>
+                                       <p><a name="Sigaar-aansteken"></a></p>
+                                       <p class="text-center">Voor het aansteken is het belangrijk dat u een butaan-aansteker of lucifers gebruikt. 
+                                       Andere aanstekers gebruiken gassen die de smaak van uw sigaar beïnvloeden.</p>
+                                   </div>
+                               </div> 
+                           </header>
+                       </nav>
+                   
+                                
+                             
+            <div id="footer">
+                <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="w-25">Klantenservice</th>
+                            <th scope="col" class="w25">Producten</th>
+                            <th scope="col" class="w25">Mijn Account</th>
+
+                        </tr>
+                    </thead>
+                    
+                    
+                    <tbody>
+                    <tr>
+                        <td><a href="#">Voorwaarden</td></a>
+                        <td><a href="#">Nieuwe producten</td></a>
+                        <td><a href="#">Registrenen</td></a>
+                     </tr>    
+                   
+                    <tr class="align-bottom">
+                       
+                    </tr>
+                    <tr>
+                        <td><a href="#">Formulier herroepingsrecht</td></a>
+                        <td><a href="#">Aanbiedingen</td></a>
+                        <td><a href="#">Mijn bestellingen</td></a>
+
+                    <td class="align-top"></td>
+                        <tr>
+                            <td><a href="#">Disclaimer</td></a>
+                            <td><a href="#">Merken</td></a>
+                            <td><a href="#">Mijn verlanglijst</td></a>
+                        </tr>
+    
+                        <tr>
+                            <td><a href="#">Klantenservice</td></a>
+                            <td><a href="#">Tags</td></a>
+                            <td><a href="#">Mijn tickets</td></a>
+                        </tr>
+                
+                 
+                        <tr> 
+                            <td><a href="#">Privacy Policy</td></a>
+                            
+                        </tr>
+                    
+                
+                </tbody>
+                </table>
+                </div>
+                        </div>
+                    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
+

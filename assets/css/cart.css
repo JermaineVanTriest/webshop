@@ -1,0 +1,24 @@
+.cart {
+    background-color: rgb(252 252 252);
+    position: -500;
+    top: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 1010;
+    opacity: 0.9;
+    right: 0;
+    float: right;
+    display: none;
+}
+
+.basket {
+    cursor: pointer;
+}
+
+.cart{
+    
+}
+
+.bi bi-cart4 basket[
+]
+
