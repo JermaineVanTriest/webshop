@@ -101,8 +101,8 @@
     width: 100%;
     position: absolute;
     top: 80px;
-   /* left: -100%;    
-    opacity: 0; */
+    left: -100%;    
+    opacity: 0; 
     transition: all 0.5s ease;
   }
 
@@ -176,8 +176,8 @@
     transform: translateY(8px) rotate(45deg);
   }
 
-  #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translate(Y8px) rotate(-45deg);
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
@@ -220,11 +220,16 @@ h6{
   background: var(--brown);         
 }
 
+#footer th{
+  color: aliceblue;
+}
+
 .table{
   border-color:var(--brown);
 }
 
-tr td a[
+#footer a{
   color: white;
   font-family: 'DM Sans', sans-serif;
-]
+  text-decoration: none;
+}
