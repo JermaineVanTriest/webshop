@@ -17,14 +17,34 @@ Vue.component('product', {
     
     
     template: `
-        <div class="card">
-            <img :src="imagePath + artikel_data.image" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">{{ artikel_data.name }}</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p>Stock: {{ artikel_data.stock }}</p>
-                <button class="btn btn-primary addToCart" :disabled="artikel_data.stock === 0" @click="addToCart(artikel_data.id)">Order</button>
+   
+    <section class="main-section">
+        <div class="product-container">
+            <h5 class="card-title"></h5>
+                <div class="products">
+                    <div class="product">
+                        <div class="product-under">                           
+                            <figure class="product-image">
+                                    <img :src="imagePath + artikel_data.image" class="card-img-top" alt="..."width="300" height="300">   
+                                        <div class="product-over">
+                                            <button class="btn btn-small addToCart" data-product-id="1" >
+                                                <i class="fas fa-cart-plus"></i><i class="bi bi-cart4"></i>In winkelwagen</button>
+                                                <a href="#"class="btn btn-small"><i class="bi bi-info-circle"></i>Meer informatie</a>
+                                            </button>
+                                        </div>
+                                </figure>      
 
-            </div>
-        </div>`,
+                            <h7><strong>  {{ artikel_data.name }} </strong></h7> 
+                            <p><span class="stars"></span><p>
+                            <h8>  <p><strong>Prijs: {{ artikel_data.cost }}</strong></p> </h8>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+        `,
+
+            
 })
