@@ -1,20 +1,43 @@
-Vue.component('product', {
+Vue.component('products', {
+    props: {
+
+    },
+
     data: function () {
         return {
-            imagePath: imagePath
+            fruits: [],
         }
     },
 
-    props: {
-        artikel_data: {},
+    created() {
+        this.getProducts();
     },
 
     methods: {
-        addToCart(id) {
-            this.$root.$emit('add-to-cart', id)
-        }
+        addToCart(fruit) {
+            fruit.stock--;
+
+            this.$root.$emit('add-to-cart', fruit);
+        },
+
+        getProducts() {
+            let self = this;
+
+            axios({
+                method: 'GET',
+                url: '?page=home&action=getdata',
+                headers: {
+                    "X-Requested-With": "XMLHttpRequest"
+                }
+            }).then(function (response) {
+                if (response.data.success) {
+                    self.fruits = response.data.fruits;
+                }
+            }).catch(function (error) {
+
+            });
+        },
     },
-    
     
     template: `
    
