@@ -3,9 +3,9 @@ let app = new Vue({
 
     data: {
         appName: 'SigaarShop',
-        animal: 'Horse',
         products: [],
         showHeader: true,
+        artikels: artikels
     },
 
     mounted() {

@@ -294,7 +294,6 @@ figure {
 
 .btn {
     background-color: var(--brown);
-   
     color: var(--white);
     font-weight: bold;
     border-radius: 4px;
@@ -367,4 +366,26 @@ h7{
     top: 0;
     font-size: 1.4rem;
     color: #7e6c1f; 
+}
+
+
+ #carouselExampleCaptions {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+ }
+ 
+button button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--brown);color:va
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }

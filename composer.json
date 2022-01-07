@@ -1,0 +1,14 @@
+{
+    "name": "toby/3-webshop",
+    "description": "My PHP frameworl",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jermaine van Triest",
+            "email": "jjvt@live.nl"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}

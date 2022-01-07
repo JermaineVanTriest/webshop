@@ -1,7 +1,7 @@
 Vue.component('product', {
     data: function () {
         return {
-            
+            imagePath: imagePath
         }
     },
 
@@ -34,9 +34,15 @@ Vue.component('product', {
                                         </div>
                                 </figure>      
 
-                            <h7><strong>  {{ artikel_data.name }} </strong></h7> 
-                            <p><span class="stars"></span><p>
-                            <h8>  <p><strong>Prijs: {{ artikel_data.cost }}</strong></p> </h8>
+                                <h5><strong>  {{ artikel_data.name }} </strong></h5> 
+                                
+                                
+                                
+                               
+
+
+                                  
+                                <h5>  <p><strong>Prijs: {{ artikel_data.cost }}</strong></p> </h5>
                         </div>
                     </div>
                 </div>
