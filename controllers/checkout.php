@@ -9,7 +9,7 @@ function saveCard()
 {
     echo json_encode([
         'success'   => true,
-        'message'   => 'Fruit added to order',
+        'message'   => 'product added to order',
         'redirect'  => '',
     ]);
 }
