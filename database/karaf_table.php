@@ -11,7 +11,7 @@ function seedTable() {
             'price'         => 34.95,
             'stock'         => 3,
         ],
-    
+     
         [
             'id'            => 17,
             'name'          => 'Karaf set 7 delig',

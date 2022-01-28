@@ -14,4 +14,4 @@ function login()
     dd($data);
 
     dd($_POST['password'], password_verify($_POST['password'], $data['password']));
-}
+}  

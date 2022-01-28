@@ -209,7 +209,7 @@ function seedTable() {
             'price'         => 9.95,
             'stock'         => 3,
         ],
-    
+     
         [
             'id'            => 48,
             'name'          => 'Sigaarknipper deluxe',

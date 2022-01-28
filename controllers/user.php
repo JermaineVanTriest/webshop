@@ -43,10 +43,6 @@ function store() {
     header('Location: ?page=user');
 }
 
-/**
- * Store user record into database
- * POST
- */
 function updateUser() {
     $userId = getUserIdFromUrl();
 

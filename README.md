@@ -1,1 +1,3 @@
-php project
+php project 
+npm insall
+composer install

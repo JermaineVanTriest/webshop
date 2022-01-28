@@ -22,7 +22,7 @@ function handleForm($view)
         insert($product, 'products');
     }
 }
-
+  
 function editRecord($view = null)
 {
     if (array_key_exists('id', $_GET) && (int)$_GET['id'] > 0) {
