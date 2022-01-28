@@ -1,0 +1,84 @@
+
+
+.product-image:hover .product-over {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image {
+    position: relative;
+    height: 62%;
+    background-color: rgba(0,0,0,. 5);
+}
+
+.product-image img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 80px;
+    width: 90%;
+    border: 30rem;
+
+}
+
+.product-over {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: show_top;
+    animation-duration: 1s;
+    backdrop-filter: blur(5px);
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.btn {
+    background-color: var(--brown);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+.btn > .fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.5s;
+}
+
+.btn:hover .fa-angle-right {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+}
+
+h1{
+    background-color: aqua;
+}
+]

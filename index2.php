@@ -4,4 +4,4 @@ require 'core/core.php';
 
 $name = 'Jermaine';
 
-$fruits = new stdClass();
+$products = new stdClass();

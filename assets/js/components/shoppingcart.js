@@ -1,7 +1,7 @@
 Vue.component('shopping-cart', {
     data() {
         return {
-            favFruit: 'strawberry',
+            product: 'cigar',
         }
     },
 
@@ -22,7 +22,7 @@ Vue.component('shopping-cart', {
     },
 
     template: `<div class="cart">
-        <button>Click me {{ this.favFruit }}</button>
+        <button>Click me {{ this.product }}</button>
         </div>`,
 }
 
