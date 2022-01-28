@@ -153,7 +153,7 @@ return [
         'cost'          =>  9.95,
         'stock'         =>  3,
     ],    
-
+   
     [
         'id'            =>  49,
         'name'          =>  'Aansterker deluxe',
