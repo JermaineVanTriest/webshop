@@ -2,46 +2,36 @@
 
 function index($view)
 {
-    $products = require 'data/best_sale.php';
+    // $bestSale = require 'data/best_sale.php';
 
     return require $_SERVER['DOCUMENT_ROOT'] . '/assets/views/' . $view . '.view.php';
 }
 
-
 function getData()
 {
-    $sql = "SELECT * FROM `products` WHERE `deleted_at` IS NULL";
-    $res = query($sql);
+    try {
+        $query = "SELECT * FROM `bestSale` WHERE `deleted_at` IS NULL";
+        $result = query($query);
+        
+        $bestSale = $result->fetchAll(PDO::FETCH_ASSOC);
 
-    $shoppingCart = array_key_exists('cart', $_SESSION) ? json_decode($_SESSION['cart']) : [];
-
-    $products = [];
-
-    $index = 0;
-
-    while ($product = $res->fetch(PDO::FETCH_ASSOC)) {
-        $products[$index] = $product;
-        $products[$index]['price'] = (float)$product['price'];
-        $products[$index]['stock'] = (int)$product['stock'];
-
-        if (count($shoppingCart)) {
-            foreach ($shoppingCart as $key => $product) {
-                dd($product, $product);
-                
-                if ($product['id'] === $product['id']) {
-                    // $products[$key][''];
-                }
-            }
-        }
-
-        $index++;
+        $success = true;
+        $message = "Success";
+        
+    } catch (Exception $e) {
+        $bestSale = null;
+        $success = false;
+        $message = $e->getMessage();
     }
 
-    // dd($products);
-
     echo json_encode([
-        'success'   => true,
-        'products'    => $products,
-        'what'      => 'kiekeboo!',
+        'success'   => $success,
+        'message'   => $message,
+        'bestSale'  => $bestSale,
     ]);
+}
+
+function registerSuccessful()
+{
+    return require $_SERVER['DOCUMENT_ROOT'] . '/assets/views/register-succful.view.php';
 }

@@ -21,27 +21,24 @@
     <script src="node_modules/vue/dist/vue.min.js"></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
     
-    <script src="/assets/js/components/product.js"></script>  
-    <script src="/assets/js/components/products.js"></script> 
+    <script src="/assets/js/components/product.js"></script> 
+    <script src="/assets/js/components/cart.js"></script> 
     <script src="/assets/js/components/shoppingcart.js"></script>
     <script src="/assets/js/accessories.js"></script>
     <script src="/assets/js/config.js"></script>
     <script src="/assets/js/components/newUserForm.js"></script>
-    <script src="/assets/js/modal.js"></script>
-    <script src="/assets/js/test.js"></script>          
     <script src="/assets/js/components/login.js"></script>   
-    <script src="/assets/js/btn.js"></script>
-    <script src="/assets/js/hover.js"></script>
-    <script src="/assets/js/modal.js"></script>
-    <script src="/assets/js/script.js"></script>
-    <script src="/assets/js/test.js"></script>
+    <script src="/assets/js/components/freeSending.js"></script> 
+    <script src="/assets/js/components/carousel.js"></script> 
+    <script src="/assets/js/components/question.js"></script>
+    <script src="/assets/js/components/answer.js"></script>
+    <script src="/assets/js/components/footer.js"></script>     
+    
 
-</head>
 <body background="assets/images/webshop/background.png"> 
     
 
 <main id="app" class="content">
-
         <div class="layer" @click="closeShoppingCart"></div>
         <div class="container-fluid p-0">
             

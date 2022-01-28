@@ -1,30 +1,56 @@
-Vue.component('shopping-cart', {
-    data() {
-        return {
-            product: 'cigar',
-        }
-    },
-
-    props: {
-        first_name: '',
-        last_name: '',
-    },
-
+Vue.component("cart-list", {
+    props: ["products", "totalprice"],
+    template: `
+    <div class="offcanvas offcanvas-bottom cart-list" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h3 id="offcanvasRightLabel" class="lobsterFont">Shopping cart</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between bg-none">
+            <ul class="list-group" style="overflow: auto;">
+                <li v-for="product in products" :key="product.id" class="list-group-product">
+    
+                    <div class="d-flex align-products-center justify-content-between">
+                        <div>
+                            <a :href="'/?page=product&itemid=' + product.id">
+                                <h5>{{product.name}}</h5>
+                            </a>
+                            <small>{{product.amount}} x {{formattedPrice(parseInt(product.price))}}
+                            </small>
+    
+                            <button type="button" class="d-block btn btn-secondary btn-sm"
+                                @click="$emit('remove-from-cart', product.product_id)">remove from cart</button>
+                        </div>
+    
+                        <div>
+                            {{formattedPrice(parseInt(product.price)*product.amount)}}
+                        </div>
+    
+    
+    
+                    </div>
+    
+                </li>
+            </ul>
+            <div>Totaalprijs: {{formattedPrice(totalprice)}}</div>
+        </div>
+    </div>
+    `,
     methods: {
-        closeShoppingCart() {
-            $('.layer').fadeOut();
-            $('.cart').fadeOut();
-        },
-
-        updateShoppingCart(value) {
-            console.log('updateShoppingCart: ' + value);
-        },
+    formattedPrice: function (price) {
+    return new Intl.NumberFormat(undefined, { style: 'currency', currency: 'EUR' }).format(price);
+    }
     },
-
-    template: `<div class="cart">
-        <button>Click me {{ this.product }}</button>
-        </div>`,
-}
-
-
-)
+    })
+    
+    Vue.component("cart-button", {
+    props: [],
+    template: `
+    <button class="btn btn-outline-secondary lobsterColor" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight">
+        <slot></slot>
+    </button>
+    
+    `,
+    })
