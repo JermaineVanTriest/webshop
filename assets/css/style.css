@@ -419,26 +419,7 @@ figure {
   margin: 0 5px;
 }  
 
-#overlay  {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-100%, -100%);
-  background-color: var(--brown);
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-} 
 
-#overlay :hover{
-  color: #7e6c1f;
- background: var(--brightred);
-}
 
 
 

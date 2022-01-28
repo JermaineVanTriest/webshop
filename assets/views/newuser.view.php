@@ -6,4 +6,3 @@
 </div>
 
 
-<input type="submit" value="Save">

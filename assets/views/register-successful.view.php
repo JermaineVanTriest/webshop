@@ -1,1 +1,1 @@
-<h1>Register was successfuly</h1>
+<h1>Yes gelukt</h1>

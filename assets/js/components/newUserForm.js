@@ -268,7 +268,6 @@ Vue.component('newUser', {
                         last_name: this.lastName,
                         email: this.email.value,
                         password: this.password.value,
-                        // mailing_list: this.mailingList ? '1' : '0'
                     },
                     headers: {
                         "X-Requested-With": "XMLHttpRequest"
