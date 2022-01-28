@@ -5,7 +5,7 @@ function index($view)
     return require $_SERVER['DOCUMENT_ROOT'] . '/assets/views/' . $view . '.view.php';
 }
 
-
+ 
 function checkEmail()
 {
     $email = json_decode(file_get_contents("php://input"), true);
@@ -17,7 +17,7 @@ function checkEmail()
             'success'   => true,
             'message'    => $mail,
         ]);
-    }
+    } 
 }
 function submitForm()
 {

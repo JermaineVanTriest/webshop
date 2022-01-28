@@ -17,7 +17,7 @@ function connect($dbHost = null, $dbName = null, $dbUser = null, $dbPass = null)
         $dbUser = $_ENV['DB_USER'];
         $dbPass = $_ENV['DB_PASS'];
     }
-
+ 
     try {
         $dbh = new \PDO('mysql:host=' . $dbHost . ';dbname=' . $dbName, $dbUser, $dbPass);
     } catch (\PDOException $e) {

@@ -9,7 +9,7 @@ function seedTable() {
             'price'  => 19.99,
             'stock' => 20,
         ],
-    
+     
         [
             'id'    => 2,
             'name'  => 'Sigaar bundel',

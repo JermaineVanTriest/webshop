@@ -6,9 +6,9 @@ function index($view)
 
     return require $_SERVER['DOCUMENT_ROOT'] . '/assets/views/' . $view . '.view.php';
 }
-
+ 
 function getData()
-{
+{ 
     try {
         $query = "SELECT * FROM `bestSale` WHERE `deleted_at` IS NULL";
         $result = query($query);

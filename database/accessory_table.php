@@ -1,7 +1,7 @@
 <?php
 
 function seedTable() {
-    $accessory = [
+    $accessory = [ 
 
         [
             'id'            => 7,

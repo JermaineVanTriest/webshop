@@ -2,7 +2,7 @@
 
 // Get page from URL
 $page = getPage();
-
+ 
 // Get action from URL
 $function = getFunction();
 

@@ -24,3 +24,4 @@ function getSingleUser($id)
 
     return $result->fetch(PDO::FETCH_ASSOC);
 }
+
