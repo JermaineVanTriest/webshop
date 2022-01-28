@@ -57,7 +57,7 @@ Vue.component('login-modal', {
                             <p><strong>&#10004; Sigaren over de hele wereld</strong></p>
                             <p><strong>&#10004; Bereikbaar voor advies</strong></p>
                     </p>
-                    <a class="btn btn-primary" href="/?page=register" role="button">Account aanmaken</a>
+                    <a class="btn btn-primary" href="/?page=newuser" role="button">Account aanmaken</a>
                 </div>  
             </div>
         </div>

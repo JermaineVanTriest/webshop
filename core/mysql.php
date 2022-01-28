@@ -28,6 +28,7 @@ function connect($dbHost = null, $dbName = null, $dbUser = null, $dbPass = null)
     return $dbh;
 }
 
+
 /**
  * Execture a PDO query
  * @param $query (required), the query to execute
@@ -124,3 +125,5 @@ function delete($id, $table)
         update($data, $table, $id);
     }
 }
+
+

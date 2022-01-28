@@ -1,6 +1,7 @@
 <login-modal></login-modal>
 
    
+
 <script>
     $(document).ready(function() {
         $('form').on('submit', function() {

@@ -22,14 +22,19 @@
     <script src="node_modules/axios/dist/axios.min.js"></script>
     
     <script src="/assets/js/components/product.js"></script>  
-    <script src="/assets/js/components/cart.js"></script>
+    <script src="/assets/js/components/products.js"></script> 
+    <script src="/assets/js/components/shoppingcart.js"></script>
     <script src="/assets/js/accessories.js"></script>
     <script src="/assets/js/config.js"></script>
     <script src="/assets/js/components/newUserForm.js"></script>
     <script src="/assets/js/modal.js"></script>
     <script src="/assets/js/test.js"></script>          
     <script src="/assets/js/components/login.js"></script>   
-
+    <script src="/assets/js/btn.js"></script>
+    <script src="/assets/js/hover.js"></script>
+    <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/test.js"></script>
 
 </head>
 <body background="assets/images/webshop/background.png"> 

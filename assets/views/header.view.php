@@ -14,7 +14,7 @@
                                         <li><a href="/?page=cigar" class="nav-link nav-links-btn">Sigaren</a></li>
                                         <li><a href="/?page=karaf" class="nav-link nav-links-btn">Karaf</a></li>
                                         <li><a href="/?page=accessory" class="nav-link nav-links-btn">Accessories</a></li>
-                                        <li><a href="/?page=login" class="nav-link nav-links-btn">Inloggen</a></li>
+                                        <li><a href="/?page=login&function=login" class="nav-link nav-links-btn">Inloggen</a></li>
                                         <li><div class="col-md-3 text-end pe-1 mt-1">
                                         <li><shopping-cart ref="shoppingCart"></shopping-cart></li>
                                         
